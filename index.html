@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jounou Makeup - مستحضرات تجميل فاخرة</title>
+  <title>Jounou Makeup - Luxury Cosmetics</title>
   <style>
     * {
       margin: 0;
@@ -118,6 +118,7 @@
 
     .product-card {
       transition: transform 0.3s;
+      text-align: center;
     }
 
     .product-card:hover {
@@ -130,6 +131,20 @@
       object-fit: cover;
       border-radius: 20px;
       box-shadow: 0 4px 15px rgba(183, 110, 121, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    .product-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #B76E79;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #9B5D67;
     }
 
     /* About Section */
@@ -287,10 +302,10 @@
     <nav>
       <div class="logo">JOUNOU</div>
       <ul>
-        <li><a href="#home">الرئيسية</a></li>
-        <li><a href="#products">المنتجات</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -310,23 +325,29 @@
     
     <h1>JOUNOU</h1>
     <div class="subtitle">MAKEUP</div>
-    <p>مستحضرات تجميل فاخرة لإطلالة مثالية في كل مناسبة</p>
+    <p>Luxury cosmetics for a perfect look on every occasion</p>
   </section>
 
   <!-- Products Section -->
   <section id="products" class="products">
-    <h2 class="section-title">منتجاتنا المميزة</h2>
+    <h2 class="section-title">Our Featured Products</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://polished-pony-114.convex.cloud/api/storage/de600668-e69c-416f-85ef-6e386632efba" alt="منتجات Jounou Makeup" class="product-image">
+        <img src="https://polished-pony-114.convex.cloud/api/storage/de600668-e69c-416f-85ef-6e386632efba" alt="Lip Gloss" class="product-image">
+        <div class="product-name">Lip Gloss</div>
+        <div class="product-price">400 EGP</div>
       </div>
 
       <div class="product-card">
-        <img src="https://polished-pony-114.convex.cloud/api/storage/b0716554-c76f-43cb-84ee-dc3a900a6487" alt="منتجات Jounou Makeup" class="product-image">
+        <img src="https://polished-pony-114.convex.cloud/api/storage/b0716554-c76f-43cb-84ee-dc3a900a6487" alt="Mascara" class="product-image">
+        <div class="product-name">Mascara</div>
+        <div class="product-price">600 EGP</div>
       </div>
 
       <div class="product-card">
-        <img src="https://polished-pony-114.convex.cloud/api/storage/e75d1da9-a7da-4244-beb0-5672c818ff06" alt="منتجات Jounou Makeup" class="product-image">
+        <img src="https://polished-pony-114.convex.cloud/api/storage/e75d1da9-a7da-4244-beb0-5672c818ff06" alt="Blusher" class="product-image">
+        <div class="product-name">Blusher</div>
+        <div class="product-price">500 EGP</div>
       </div>
     </div>
   </section>
@@ -334,53 +355,53 @@
   <!-- About Section -->
   <section id="about" class="about">
     <div class="about-content">
-      <h2>من نحن</h2>
+      <h2>About Us</h2>
       <p>
-        Jounou Makeup هي علامة تجارية رائدة في عالم مستحضرات التجميل، نقدم منتجات عالية الجودة 
-        مصممة خصيصاً لتلبية احتياجات المرأة العصرية.
+        Jounou Makeup is a leading brand in the world of cosmetics, offering high-quality products 
+        specially designed to meet the needs of the modern woman.
       </p>
       <p>
-        نؤمن بأن الجمال يبدأ من الثقة بالنفس، ولذلك نحرص على تقديم منتجات آمنة وفعالة 
-        تساعدك على إبراز جمالك الطبيعي بكل ثقة.
+        We believe that beauty starts with self-confidence, which is why we are committed to providing safe and effective 
+        products that help you highlight your natural beauty with confidence.
       </p>
       <p>
-        جميع منتجاتنا مصنوعة من مكونات طبيعية عالية الجودة، ومختبرة من قبل خبراء التجميل 
-        لضمان أفضل النتائج.
+        All our products are made from high-quality natural ingredients and tested by beauty experts 
+        to ensure the best results.
       </p>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2>تواصل معنا</h2>
+    <h2>Contact Us</h2>
     <form class="contact-form">
       <div class="form-group">
-        <label for="name">الاسم</label>
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
       </div>
 
       <div class="form-group">
-        <label for="email">البريد الإلكتروني</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
       </div>
 
       <div class="form-group">
-        <label for="phone">رقم الهاتف</label>
+        <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone">
       </div>
 
       <div class="form-group">
-        <label for="message">رسالتك</label>
+        <label for="message">Your Message</label>
         <textarea id="message" name="message" required></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">إرسال الرسالة</button>
+      <button type="submit" class="submit-btn">Send Message</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Jounou Makeup. جميع الحقوق محفوظة.</p>
+    <p>&copy; 2024 Jounou Makeup. All rights reserved.</p>
     <p>📍 Egypt</p>
     <p>📧 info@jounomakeup.com</p>
     
